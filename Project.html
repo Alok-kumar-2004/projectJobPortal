@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="job.css">
+    
+</head>
+<body>
+    <header>
+        <h1>Job Portal</h1>
+        <nav>
+            <a href="#jobs">Jobs</a>
+            <a href="#post-job">Post a Job</a>
+        </nav>
+    </header>
+
+    <section id="jobs">
+        <h2>Available Jobs</h2>
+        <div class="job-listing" id="job-listing">
+            <!-- Job listings will be added here dynamically -->
+        </div>
+    </section>
+
+    <section id="post-job">
+        <h2>Post a Job</h2>
+        <form id="job-form">
+            <label for="title">Job Title:</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+            
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            
+            <label for="description">Job Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <button type="submit">Post Job</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Job Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
